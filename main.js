@@ -20,7 +20,7 @@ header.style.border='solid 3px #000'
 var xyz=document.querySelectorAll('.title')
 console.log(xyz)
 console.log("hello from JS")
-xyz[0].style.color='green';*/
+xyz[0].style.color='green';
 
 var items = document.getElementsByClassName('list-group-item')
 console.log(items)
@@ -32,6 +32,22 @@ console.log(items[1])
 items[2].style.color='green'
 
 for(var i=0;  i<items.length; i++){
-    items[i].fontWeight="bold"
+    items[i].style.fontWeight="bold"
 }
+*/
+var xyz=document.querySelectorAll('.title')
+console.log(xyz)
 
+xyz[0].style.color='green'; 
+var items = document.getElementsByTagName('li')
+console.log(items)
+console.log(items[1])
+
+
+
+
+items[2].style.color='green'
+
+for(var i=0;  i<items.length; i++){
+    items[i].style.fontWeight="bold"
+}
