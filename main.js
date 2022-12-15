@@ -1,53 +1,22 @@
-/*console.log(document.domain)
-console.log(document.URL)
-console.log(document.title)
-console.log(document.doctype)
-console.log(document.head)
-console.log(document.body)
-console.log(document.all)
-console.log(document.forms)
-console.log(document.links)
-console.log(document.images)
+//quetySelector
 
-
-var headerTitle=document.getElementById('header-title')
-console.log(headerTitle)
-headerTitle.innerText='Hello'
-
-var header = document.getElementById('main-header')
-header.style.border='solid 3px #000'
-
-var xyz=document.querySelectorAll('.title')
-console.log(xyz)
-console.log("hello from JS")
-xyz[0].style.color='green';
-
-var items = document.getElementsByClassName('list-group-item')
+var items=document.querySelector('.list-group-item:nth-child(2)');
 console.log(items)
-console.log(items[1])
+items.style.backgroundColor='green'
 
+var thirdItem=document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.color='white'
 
+//querySelectorAll
 
+var item=document.querySelectorAll('li')
+console.log(item)
+item[1].style.color='green'
 
-items[2].style.color='green'
-
-for(var i=0;  i<items.length; i++){
-    items[i].style.fontWeight="bold"
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for(i=0; i<odd.length; i++){
+    odd[i].style.backgroundColor='green'
 }
-*/
-var xyz=document.querySelectorAll('.title')
-console.log(xyz)
 
-xyz[0].style.color='green'; 
-var items = document.getElementsByTagName('li')
-console.log(items)
-console.log(items[1])
-
-
-
-
-items[2].style.color='green'
-
-for(var i=0;  i<items.length; i++){
-    items[i].style.fontWeight="bold"
-}
+/* queryselector do impact on first element among all element
+while queryselectorall impact on all element */
