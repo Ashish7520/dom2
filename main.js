@@ -19,7 +19,7 @@ header.style.border='solid 3px #000'
 
 var xyz=document.querySelectorAll('.title')
 console.log(xyz)
-
+console.log("hello from JS")
 xyz[0].style.color='green';
 
 
